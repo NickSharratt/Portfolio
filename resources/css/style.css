@@ -44,13 +44,8 @@ nav a {
 main {
     padding: 0 15%;
     position: relative;
-    top: 125.14px;
+    top: 9em;
     display: grid;
-    grid-template-rows: 3
-    grid-template-areas: "about about about",
-                         "projects projects projects",
-                         "skills skills skills",
-                         "contact contact contact";
 }
 
 main .about {
@@ -85,6 +80,7 @@ main .about h2 {
 
 main .projects {
    align-self: center;
+   margin: 2em 0;
 }
 
 ul {
@@ -96,6 +92,7 @@ ul {
 p {
     font-weight: 350;
     font-size: 1.2em;
+    margin: 0;
 }
 
 a {
@@ -137,9 +134,10 @@ main .contact .text {
     text-align: center;
 }
 
-main .contact .text p {
+main .about .text p {
     text-align: justify;
     text-justify: inter-word;
+    margin: 0;
 }
 
 main .contact img {
@@ -160,4 +158,14 @@ main .contact img {
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0.25em;
 }
