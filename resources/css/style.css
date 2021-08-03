@@ -46,7 +46,7 @@ main {
     position: relative;
     top: 125.14px;
     display: grid;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-rows: 3
     grid-template-areas: "about about about",
                          "projects projects projects",
                          "skills skills skills",
@@ -98,4 +98,66 @@ p {
     font-size: 1.2em;
 }
 
+a {
+    text-decoration: none;
+}
 
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+}
+
+a:focus { 
+    text-decoration: none; 
+}
+
+a:hover, a:active { 
+    text-decoration: none; 
+}
+
+.icon {
+    padding: 0 0.2em;
+    color: black;
+}
+
+main .contact {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+main .contact .text {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1 / span 2;
+    text-align: center;
+}
+
+main .contact .text p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+main .contact img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+.custom-logos {
+    height: 3em;
+    padding: 0 0.2em;
+}
+
+#skill-logos {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+}
