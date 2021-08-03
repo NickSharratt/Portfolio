@@ -39,6 +39,12 @@ nav a {
     width: 100%;
     text-decoration: none;
     font-size: 0.9em;
+    padding: 8px 12px;
+}
+
+nav a:hover{
+    border: 2px black solid;
+    border-radius: 100px;
 }
 
 main {
@@ -48,14 +54,14 @@ main {
     display: grid;
 }
 
-main .about {
+.about {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 10% 90%;
     height: fit-content;
 }
 
-main .about img {
+.about img {
     grid-column: 2;
     grid-row: 1 / span 2;
     align-self: center;
@@ -63,7 +69,13 @@ main .about img {
     width: 100%;
 }
 
-main .about .text {
+.about img:hover {
+    border: 5px solid black;
+    border-radius: 100%;
+    box-sizing:border-box;
+}
+
+.about .text {
     grid-column: 1;
     grid-row: 1 / span 2;
     height: 100%;
@@ -74,11 +86,11 @@ main .about .text {
     padding-right: 5%;
 }
 
-main .about h2 {
+.about h2 {
     margin: 0;
 }
 
-main .projects {
+.projects {
    align-self: center;
    margin: 2em 0;
 }
@@ -120,27 +132,27 @@ a:hover, a:active {
     color: black;
 }
 
-main .contact {
+.contact {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
 }
 
-main .contact .text {
+.contact .text {
     align-self: center;
     justify-self: center;
     grid-row: 1 / span 2;
     text-align: center;
 }
 
-main .about .text p {
+.about .text p {
     text-align: justify;
     text-justify: inter-word;
     margin: 0;
 }
 
-main .contact img {
+.contact img {
     grid-column: 2;
     grid-row: 1 / span 2;
     align-self: center;
@@ -160,8 +172,17 @@ main .contact img {
     justify-content: space-between;
 }
 
+.skills {
+    text-align: center;
+}
+
+.skills p {
+    padding: 1em;
+}
+
 h2 {
     margin: 0;
+    font-size: 2em;
 }
 
 h3 {
