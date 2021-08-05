@@ -12,8 +12,8 @@ header {
     z-index: 1;
     background-color: white;
     width: 70%;
-    height: auto;
     font-size: 1.5rem;
+    max-height: 10%;
 }
 
 header h1 {
@@ -201,4 +201,70 @@ h3 {
 .skill h6 {
     margin: 0;
     font-size: 0.85em;
+}
+
+@media only screen and (max-width: 800px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    header {
+       padding: 3% 6%;
+       width: 88%;
+       grid-template-columns: 2fr 3fr;
+    }
+
+    nav {
+        font-size: 1rem;
+        justify-self: right;
+    }
+
+    nav a {
+        padding: 3px;
+    }
+
+    main {
+        padding: 3% 6%;
+        width: 88%;
+        top: 4em;
+    }
+
+    .about img {
+        width: 60%;
+        padding: 0 20%;
+    }
+
+    .about img:hover {
+            border: none;
+            border-radius: none;
+            box-sizing:initial;
+    }
+
+    .about {
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .about .text {
+        padding-right: 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #skill-logos .fa-3x {
+        font-size: 1.8em;
+    }
+
+    .custom-logos {
+        height: 1.8em;
+    }
+
+    #skill-logos {
+        justify-content: space-evenly;
+    }
 }
